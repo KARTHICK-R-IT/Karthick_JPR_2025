@@ -1,0 +1,10 @@
+#logic 1 using while loop
+n=int(input())
+def countDigit(n):
+    count=0
+    while(n!=0):
+        digit = n%10   #taking last digit
+        count+=1       #increment the count
+        n=n//10        #removing the last digit
+    return count
+print(countDigit(n))
